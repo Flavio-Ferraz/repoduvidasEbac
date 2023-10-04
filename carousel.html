@@ -6,25 +6,43 @@
     <title>Carousel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div data-bs-interval="3000" class="carousel-item active"><!--O intervalo é definido em milisegundos-->
-                <img src="https://cdn.pixabay.com/photo/2020/02/04/13/06/cusco-4818118_1280.jpg">
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active"><!--O intervalo é definido em milisegundos-->
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/02/04/13/06/cusco-4818118_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Foto 1</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2013/12/08/16/28/ollantaytambo-225150_1280.jpg" >
+                    <div class="carousel-caption">
+                        <h2>Foto 2</h2>
+                    </div>
+                </div>            
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/01/31/22/47/machupiciu-1172347_1280.jpg" >
+                    <div class="carousel-caption">
+                        <h2>Foto 3</h2>
+                    </div>
+                </div>
+                
             </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2013/12/08/16/28/ollantaytambo-225150_1280.jpg" >
-            </div>
-            <div data-bs-interval="3000" class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2016/01/31/22/47/machupiciu-1172347_1280.jpg">
-            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" 
+                    class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
         </div>
-        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carouel-control-prev" type="button">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
-            <span class="carousel-control-next-icon"></span>
-        </button>
     </div>
 
 
